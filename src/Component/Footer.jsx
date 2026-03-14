@@ -3,18 +3,18 @@ import { Twitter, Instagram, Linkedin } from 'lucide-react'
 
 function Footer() {
     return (
-        <footer className="bg-[#0f172a] text-white py-16 px-8 border-t border-slate-800">
+        <footer className="bg-[#0f172a] text-white py-10 md:py-16 px-4 md:px-8 border-t border-slate-800">
             <div className="max-w-7xl mx-auto">
-                <div className="flex flex-col md:flex-row justify-between items-start gap-12 mb-16">
+                <div className="flex flex-col md:flex-row justify-between items-start gap-10 md:gap-12 mb-10 md:mb-16">
                     {/* Logo & Description */}
-                    <div className="max-w-sm ml-20">
+                    <div className="max-w-sm md:ml-20">
                         <div className="flex flex-col justify-center leading-none mb-6">
                             <div className="text-2xl font-bold tracking-wide">
                                 <span className="text-[#0ea5e9]">Fleet</span>
                                 <span className="text-[#84cc16]">Mind</span>
                             </div>
                             <div className="text-[10px] mt-2 text-gray-400 tracking-[0.2em] uppercase font-medium mt-1">
-                                Fleet Management & Tracking Solutions
+                                Fleet Management &amp; Tracking Solutions
                             </div>
                         </div>
                         <p className="text-slate-400 leading-relaxed mb-6">
@@ -34,7 +34,7 @@ function Footer() {
                     </div>
 
                     {/* Product Links */}
-                    <div className='mr-50'>
+                    <div className="md:mr-50">
                         <h4 className="text-lg font-bold mb-6 text-white">Product</h4>
 
                         <ul className="grid grid-cols-2 md:grid-cols-3 gap-x-10 gap-y-4 text-slate-400">
@@ -43,25 +43,21 @@ function Footer() {
                                     Live GPS Tracking
                                 </a>
                             </li>
-
                             <li>
                                 <a href="#" className="hover:text-[#84cc16] transition-colors">
                                     IoT Connectivity
                                 </a>
                             </li>
-
                             <li>
                                 <a href="#" className="hover:text-[#84cc16] transition-colors">
                                     Fuel Insights
                                 </a>
                             </li>
-
                             <li>
                                 <a href="#" className="hover:text-[#84cc16] transition-colors">
                                     Driver Monitoring
                                 </a>
                             </li>
-
                             <li>
                                 <a href="#" className="hover:text-[#84cc16] transition-colors">
                                     Trip History
@@ -69,11 +65,10 @@ function Footer() {
                             </li>
                         </ul>
                     </div>
-
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="pt-8 ml-20 mr-20 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm">
+                <div className="pt-8 md:ml-20 md:mr-20 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm text-center md:text-left">
                     <p>© {new Date().getFullYear()} FleetMind Solutions. All rights reserved.</p>
                     <div className="flex gap-8">
                         <a href="#" className="hover:text-white transition-colors">Terms</a>
