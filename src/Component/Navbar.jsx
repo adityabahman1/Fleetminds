@@ -6,7 +6,7 @@ function Navbar() {
             {/* Left: Logo */}
             <div className="flex items-center gap-2">
                 {/* Logo Text */}
-                <div className="flex flex-col ml-2  md:ml-16 justify-center leading-none">
+                <div className="flex flex-col ml-2  md:ml-8 justify-center leading-none">
                     <div className="text-xl md:text-2xl font-bold tracking-wide">
                         <span className="text-[#0ea5e9]">Fleet</span>
                         <span className="text-[#84cc16]">Mind</span>
