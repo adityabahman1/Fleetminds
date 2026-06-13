@@ -1,21 +1,18 @@
-import { useState } from 'react'
-import './App.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Index from './Pages/Index'
-
+import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
+import Index from './Pages/Index';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div>
+    <HelmetProvider>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
         </Routes>
       </BrowserRouter>
-    </div>
-  )
+    </HelmetProvider>
+  );
 }
 
-export default App
+export default App;
